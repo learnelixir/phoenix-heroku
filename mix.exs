@@ -4,7 +4,7 @@ defmodule PhoenixHeroku.Mixfile do
   def project do
     [app: :phoenix_heroku,
      version: "0.0.1",
-     elixir: "~> 1.0",
+     elixir: "1.0.1",
      elixirc_paths: ["lib", "web"],
      compilers: [:phoenix] ++ Mix.compilers,
      deps: deps]
