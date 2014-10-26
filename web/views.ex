@@ -1,15 +1,18 @@
 defmodule PhoenixHeroku.Views do
+  use Phoenix.View, root: "web/templates"
 
-  defmacro __using__(_options) do
-    quote do
-      use Phoenix.View
-      import unquote(__MODULE__)
+  # Everything in this block is available runs in this
+  # module and in other views that use MyApp.View
+  using do
+    # Import common functionality
+    import PhoenixHeroku.I18n
+    import PhoenixHeroku.Router.Helpers
 
-      # This block is expanded within all views for aliases, imports, etc
-      import PhoenixHeroku.I18n
-      import PhoenixHeroku.Router.Helpers
-      alias Phoenix.Controller.Flash
-    end
+    # Use Phoenix.HTML to import all HTML functions (forms, tags, etc)
+    use Phoenix.HTML
+
+    # Common aliases
+    alias Phoenix.Controller.Flash
   end
 
   # Functions defined here are available to all other views/templates
