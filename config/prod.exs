@@ -17,4 +17,4 @@ config :phoenix, PhoenixHeroku.Router,
   secret_key_base: "3f0JoEl+Ijbte28aV0WzusJg/RxkAiytWTYmXQid38P1FM0/JmgH2OFcevP6ztGTmYPjEt2oGMP8qHkLMwyE7w=="
 
 config :logger, :console,
-  level: :info
+  level: :all
