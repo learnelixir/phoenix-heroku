@@ -22,7 +22,7 @@ defmodule PhoenixHeroku.Mixfile do
   #
   # Type `mix help deps` for examples and options
   defp deps do
-    [{:phoenix, "0.5.0"},
+    [{:phoenix, git: "git@github.com:phoenixframework/phoenix.git"},
      {:cowboy, "~> 1.0"}]
   end
 end
