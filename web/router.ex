@@ -1,4 +1,4 @@
-defmodule BookStore.Router do
+defmodule PhoenixHeroku.Router do
   use Phoenix.Router
   
   pipeline :browser do
