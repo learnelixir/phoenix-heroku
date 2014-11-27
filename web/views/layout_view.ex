@@ -1,3 +1,3 @@
 defmodule PhoenixHeroku.LayoutView do
-  use Phoenix.View, root: "web/templates"
+  use PhoenixHeroku.View
 end
